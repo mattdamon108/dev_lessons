@@ -21,7 +21,7 @@ function twoTimes(arg1: number) {
 * Arrow(화살표) 함수
 
 ```javascript
-const twoTimes = (arg1: number){
+const twoTimes = (arg1: number) => {
     const result = arg1 * 2
 
     return result
@@ -43,7 +43,7 @@ arg1의 자리에 1이라는 숫자를 입력해서 `twoTimes`라는 함수를 �
 이 둘을 합해 보면,
 
 ```javascript
-const twoTimes = (arg1: number){
+const twoTimes = (arg1: number) => {
     const result = arg1 * 2
 
     return result
@@ -72,7 +72,7 @@ React Native의 컴포넌트들은 모두 함수야. View, Text, Button같은 �
 
 그래서, App.tsx를 보면 함수처럼 생긴 걸 알 수 있을 거야.
 
-```react
+```js
 const App = () => {
     // 코드들...
 
@@ -92,7 +92,7 @@ onChangeText는 Text라는 컴포넌트 함수의 입력값이야. `twoTimes`함
 
 이걸 대충 표현해본다면 이렇게 될거야.
 
-```react
+```js
 const Text = (onChangeText) => {
     ...
 
@@ -108,7 +108,7 @@ const Text = (onChangeText) => {
 
 1. MyName이라는 컴포넌트를 함수를 이용해서 만들어보자.
 
-```react
+```js
 const MyName = () => {
     return <Text>성호</Text>
 }
@@ -116,7 +116,7 @@ const MyName = () => {
 
 2. 이 컴포넌트를 앱 안에서 사용해보자.
 
-```react
+```js
 const App = () => {
     ...
 
@@ -136,7 +136,7 @@ const MyName = () => {
 
 3. 컴포넌트에 입력값을 받는 함수로 만들어보자.
 
-```react
+```js
 const App = () => {
     ...
 
