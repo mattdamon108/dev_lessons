@@ -149,7 +149,7 @@ const App = () => {
     </>)
 }
 
-const MyName = (name: string) => {
+const MyName = ({ name } : { name: string }) => {
     return <Text>{name}</Text>
 }
 ```
