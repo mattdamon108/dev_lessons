@@ -21,7 +21,7 @@ function twoTimes(arg1: number) {
 * Arrow(화살표) 함수
 
 ```javascript
-const twoTimes = (arg1: number){
+const twoTimes = (arg1: number) => {
     const result = arg1 * 2
 
     return result
@@ -43,7 +43,7 @@ arg1의 자리에 1이라는 숫자를 입력해서 `twoTimes`라는 함수를 �
 이 둘을 합해 보면,
 
 ```javascript
-const twoTimes = (arg1: number){
+const twoTimes = (arg1: number) => {
     const result = arg1 * 2
 
     return result
