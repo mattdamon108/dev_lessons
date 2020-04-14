@@ -8,34 +8,34 @@
 
 함수는 보통 이렇게 생겼어. arg1이라는 숫자 입력값을 받아서 2를 곱한 뒤에 반환하는 함수를 표현해볼께.
 
-* 일반 함수
+- 일반 함수
 
 ```javascript
 function twoTimes(arg1: number) {
-    const result = arg1 * 2
+  const result = arg1 * 2;
 
-    return result
+  return result;
 }
 ```
 
-* Arrow(화살표) 함수
+- Arrow(화살표) 함수
 
 ```javascript
 const twoTimes = (arg1: number) => {
-    const result = arg1 * 2
+  const result = arg1 * 2;
 
-    return result
-}
+  return result;
+};
 ```
 
 두 함수 모두 실행을 해보면 결과는 똑같아. 함수를 선언하는 표현 방식만 다를 뿐이야. 사실 둘의 차이는 있는데, 나중에 좀 더 뒤에 알려줄께.
 
 함수를 저렇게 만들면 함수가 선언(Declaration)됐다고 말해. 그런데 선언되었다고 해서 실행이 되는 건 아냐. 실행은 어떻게 하냐면,
 
-* 함수의 호출(= 실행)
+- 함수의 호출(= 실행)
 
 ```javascript
-twoTimes(1)
+twoTimes(1);
 ```
 
 arg1의 자리에 1이라는 숫자를 입력해서 `twoTimes`라는 함수를 호출(=실행)하는 표현이야.
@@ -44,12 +44,14 @@ arg1의 자리에 1이라는 숫자를 입력해서 `twoTimes`라는 함수를 �
 
 ```javascript
 const twoTimes = (arg1: number) => {
-    const result = arg1 * 2
+  const result = arg1 * 2;
 
-    return result
-}
+  return result;
+};
 
-twoTimes(1)
+const value = twoTimes(1);
+
+console.log(value);
 ```
 
 ### **연습하기**
@@ -74,12 +76,10 @@ React Native의 컴포넌트들은 모두 함수야. View, Text, Button같은 �
 
 ```js
 const App = () => {
-    // 코드들...
+  // 코드들...
 
-    return (<View>
-        ...
-    </View>)
-}
+  return <View>...</View>;
+};
 ```
 
 결국 React Native는 App이라는 함수를 실행해서 화면을 구성하고 작동하게 하는 것이지.
@@ -110,8 +110,8 @@ const Text = (onChangeText) => {
 
 ```js
 const MyName = () => {
-    return <Text>성호</Text>
-}
+  return <Text>성호</Text>;
+};
 ```
 
 2. 이 컴포넌트를 앱 안에서 사용해보자.
